@@ -9,15 +9,4 @@ import { Http } from '@angular/http';
 
 export class AppComponent {
 
-  fotos : Object[] = [];
-
-  constructor(private http : Http){
-
-    this.http.get('v1/fotos')
-      .map(res => res.json())
-      .subscribe(foto => {
-          this.fotos = foto;
-          console.log(this.fotos);
-    }, erro => console.error(erro));
-  }
 }

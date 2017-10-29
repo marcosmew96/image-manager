@@ -9,17 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var CadastroComponent = (function () {
+    function CadastroComponent() {
     }
-    AppComponent = __decorate([
+    CadastroComponent = __decorate([
         core_1.Component({
-            selector: 'app',
-            templateUrl: './app/app.component.html'
+            moduleId: module.id,
+            selector: 'cadastro',
+            templateUrl: './cadastro.component.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], CadastroComponent);
+    return CadastroComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.CadastroComponent = CadastroComponent;
+//# sourceMappingURL=cadastro.component.js.map

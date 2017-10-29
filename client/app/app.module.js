@@ -15,6 +15,9 @@ var foto_module_1 = require('./foto/foto.module');
 var painel_module_1 = require('./painel/painel.module');
 var http_1 = require('@angular/http');
 var app_component_1 = require('./app.component');
+var listagem_component_1 = require('./listagem/listagem.component');
+var cadastro_component_1 = require('./cadastro/cadastro.component');
+var app_routes_1 = require('./app.routes');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,10 +27,13 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 foto_module_1.FotoModule,
                 painel_module_1.PainelModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                app_routes_1.routing
             ],
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent,
+                listagem_component_1.ListagemComponent,
+                cadastro_component_1.CadastroComponent
             ],
             bootstrap: [
                 app_component_1.AppComponent
