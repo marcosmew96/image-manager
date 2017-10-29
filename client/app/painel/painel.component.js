@@ -12,6 +12,10 @@ var core_1 = require('@angular/core');
 var PainelComponent = (function () {
     function PainelComponent() {
     }
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Object)
+    ], PainelComponent.prototype, "titulo", void 0);
     PainelComponent = __decorate([
         core_1.Component({
             selector: 'painel',

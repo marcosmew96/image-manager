@@ -1,9 +1,7 @@
 <div class="container">
-  <h1 class="text-center">Olá, o component inicial funcionou ?</h1>
-  <ul *ngFor="let foto of fotos">
-    <li>
-      <foto url = "{{foto.url}}" titulo = "{{foto.titulo}}"></foto>
-    </li>
-  </ul>
-<painel></painel>
+  <div class="row">
+    <painel *ngFor="let foto of fotos" titulo = "{{foto.titulo}}" class="col-md-2">
+        <foto titulo = "{{foto.titulo}}" url = "{{foto.url}}"></foto>
+    </painel>
+  </div>
 </div>
