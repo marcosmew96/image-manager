@@ -15,10 +15,12 @@ var AppComponent = (function () {
         var _this = this;
         this.http = http;
         this.fotos = [];
-        this.http.get('v1/fotos').subscribe(function (res) {
-            _this.fotos = res.json();
+        this.http.get('v1/fotos')
+            .map(function (res) { return res.json(); })
+            .subscribe(function (foto) {
+            _this.fotos = foto;
             console.log(_this.fotos);
-        });
+        }, function (erro) { return console.error(erro); });
     }
     AppComponent = __decorate([
         core_1.Component({
