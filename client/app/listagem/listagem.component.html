@@ -13,13 +13,14 @@
                             Nova Foto
                         </a>
                     </span>
+                    <input #digitado class="form-control" placeholder="filtrar pelo titulo da foto">
                 </div>
             </form>
         </div> <!-- fim col-md-12 -->
     </div> <!-- fim row -->
     <br>
     <div class="row">
-        <painel *ngFor="let foto of fotos" titulo="{{foto.titulo}}" class="col-md-2">
+        <painel *ngFor="let foto of fotos | filtro : digitado.value " titulo="{{foto.titulo | uppercase }}" class="col-md-2">
             <foto titulo="{{foto.titulo}}" url="{{foto.url}}">
             </foto>
         </painel>
