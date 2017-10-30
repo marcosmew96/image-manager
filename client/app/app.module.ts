@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FotoModule } from './foto/foto.module';
 import { PainelModule } from './painel/painel.module';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ListagemComponent } from './listagem/listagem.component';
@@ -19,7 +20,8 @@ import { routing } from './app.routes';
     FotoModule,
     PainelModule,
     HttpModule,
-    routing
+    routing,
+    FormsModule
   ],
   declarations : [
     AppComponent,

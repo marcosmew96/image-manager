@@ -14,6 +14,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var foto_module_1 = require('./foto/foto.module');
 var painel_module_1 = require('./painel/painel.module');
 var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
 var listagem_component_1 = require('./listagem/listagem.component');
 var cadastro_component_1 = require('./cadastro/cadastro.component');
@@ -28,7 +29,8 @@ var AppModule = (function () {
                 foto_module_1.FotoModule,
                 painel_module_1.PainelModule,
                 http_1.HttpModule,
-                app_routes_1.routing
+                app_routes_1.routing,
+                forms_1.FormsModule
             ],
             declarations: [
                 app_component_1.AppComponent,
