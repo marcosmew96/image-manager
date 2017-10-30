@@ -12,9 +12,9 @@ var core_1 = require('@angular/core');
 var Filtro = (function () {
     function Filtro() {
     }
-    Filtro.prototype.transforma = function (fotos, digitado) {
-        console.log(fotos);
-        console.log(digitado);
+    Filtro.prototype.transform = function (fotos, digitado) {
+        digitado = digitado.toLowerCase();
+        return fotos.filter(function (foto) { return foto.titulo.toLowerCase().includes(digitado); });
     };
     Filtro = __decorate([
         core_1.Pipe({
